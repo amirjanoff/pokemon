@@ -1,0 +1,12 @@
+.btn-primary {
+  background-color: $primary-color !important;
+  color: #212529;
+  border-color: transparent !important;
+  padding: 10px 40px;
+  transition: 0.3s ease;
+  &:hover {
+    border-color: yellow !important;
+    color: black;
+    background: linear-gradient(135deg, orange 60%, yellow);
+  }
+}
