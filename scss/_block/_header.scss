@@ -1,21 +1,26 @@
 .header-section {
+  a {
+    display: inline-block;
+  }
   text-align: center;
   margin-bottom: 70px;
   &__img {
+    max-width: 500px;
     @media (max-width: $desktop) {
-      width: 400px;
+      max-width: 300px;
       height: 150px;
     }
   }
 }
 .first-section__inner-input {
   display: flex;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 100px;
   @media (max-width: $desktop) {
     margin: 0 auto;
     flex-direction: column;
-    width: 50% !important ;
+    width: 60% !important ;
     margin-bottom: 50px;
   }
 }
@@ -26,8 +31,11 @@
   flex-wrap: wrap;
   gap: 15px;
 }
-.pokemon-img {
-  margin: 30px 75px 68px;
+.pokemon-box {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .line {
   display: inline;
@@ -42,7 +50,7 @@
   line-height: 28.13px;
 }
 .card-subtitle {
-  padding: 20px 0 37px 30px;
+  padding: 20px 20px 37px 30px;
 }
 .pokemon-weight {
   font-size: 24px;
@@ -60,4 +68,8 @@
 
 .card {
   border-radius: 20px;
+}
+.pokemon-img {
+  width: 157px;
+  height: 157px;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>pokemon</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
       rel="stylesheet"
     />
-  </head>
   <body>
     <header class="header-section">
       <div class="container">
@@ -67,12 +66,18 @@
             placeholder="Pokemon height"
           />
           <label class="hidden"></label>
-          <button class="btn btn-primary" type="submit">Add</button>
+          <button class="btn btn-primary" type="button">Add</button>
+          <button type="button" class="btn btn-secondary" data-modal-open="#test-modal">favorites</button>
         </form>
         <div data-pokemon class="first-section__inner"></div>
       </div>
+      <div class="my-modal" id="test-modal" data-modal>
+        <div class="my-modal__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae eligendi illum ducimus quibusdam cumque labore hic error magni ipsum deserunt cum necessitatibus maiores assumenda, distinctio odit tenetur non nulla consequuntur inventore asperiores nesciunt? Ex dolorum cumque tempore corporis saepe possimus labore modi accusamus dicta quas! Dicta amet necessitatibus voluptatibus!
+        </div>
+      </div>
     </section>
-
+    <script src="./js/modal.js"></script>
     <script src="./js/pokemons.js"></script>
     <script src="./js/main.js"></script>
   </body>

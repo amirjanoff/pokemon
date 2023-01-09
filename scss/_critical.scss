@@ -10,3 +10,23 @@ body  {
 .hidden {
   display: none;
 }
+.my-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color:rgba($color: #000000, $alpha: 0.5);
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  &.show {
+    display: flex;
+  }
+   
+  &__content {
+    max-width: 600px;
+    background-color:#fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
